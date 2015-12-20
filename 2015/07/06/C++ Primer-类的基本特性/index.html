@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>C++ Primer-类的基本特性 | HIVE STUDIO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="前段时间一直忙于一些琐碎的事情，直到最近才终于有时间静下心来看看书，于是趁这段时间详读了一遍C++ Primer（第5版）,同时将书中很多比较好的内容整理在博客当中，便于翻阅记忆。
+C++ Primer（第5版）是一本很好的学习C++基础的书籍。它不仅完整的介绍了C++的基础知识，同时也介绍了很多最新的C++11标准。其最有价值的地方在于书中有很多小的Note,这些Note提醒开发者需要注意的重点">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++ Primer-类的基本特性">
+<meta property="og:url" content="http://hivestudio.com/2015/07/06/C++ Primer-类的基本特性/index.html">
+<meta property="og:site_name" content="HIVE STUDIO">
+<meta property="og:description" content="前段时间一直忙于一些琐碎的事情，直到最近才终于有时间静下心来看看书，于是趁这段时间详读了一遍C++ Primer（第5版）,同时将书中很多比较好的内容整理在博客当中，便于翻阅记忆。
+C++ Primer（第5版）是一本很好的学习C++基础的书籍。它不仅完整的介绍了C++的基础知识，同时也介绍了很多最新的C++11标准。其最有价值的地方在于书中有很多小的Note,这些Note提醒开发者需要注意的重点">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/ef71b77d8497bd5ca684b81dbf50d4ec/web1436344695533/572B42C7EDC34C96862D9C89DAC67DB7">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="C++ Primer-类的基本特性">
+<meta name="twitter:description" content="前段时间一直忙于一些琐碎的事情，直到最近才终于有时间静下心来看看书，于是趁这段时间详读了一遍C++ Primer（第5版）,同时将书中很多比较好的内容整理在博客当中，便于翻阅记忆。
+C++ Primer（第5版）是一本很好的学习C++基础的书籍。它不仅完整的介绍了C++的基础知识，同时也介绍了很多最新的C++11标准。其最有价值的地方在于书中有很多小的Note,这些Note提醒开发者需要注意的重点">
+  
+  
+  
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+ <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
+  
+
+  
+
+  
+</head>
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="/" id="logo"><span class="site-title">HIVE STUDIO</span></a>
+      <nav id="main-nav">
+        
+      </nav>
+      
+      <div id="search-form-wrap">
+        
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit"> </button><input type="hidden" name="q" value="site:http://hivestudio.com"></form>
+        
+      </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tr>
+        
+        <td>
+          
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="搜索"><input type="hidden" name="q" value="site:http://hivestudio.com"></form>
+          
+        </td>
+      </tr>
+    </table>
+  </div>
+</header>
+
+    <div class="outer">
+      
+      <section id="main"><article id="post-C++ Primer-类的基本特性" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      C++ Primer-类的基本特性
+    </h1>
+  
+
+        <div class="article-meta">
+          
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2015/07/06/C++ Primer-类的基本特性/">
+      <time datetime="2015-07-06T16:00:00.000Z" itemprop="datePublished">2015-07-07</time>
+    </a>
+  </div>
+
+
+          
+  <div class="article-category">
+  	<i class="fa fa-folder"></i>
+    <a class="article-category-link" href="/categories/学习笔记/">学习笔记</a>
+  </div>
+
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <p><img src="http://note.youdao.com/yws/public/resource/ef71b77d8497bd5ca684b81dbf50d4ec/web1436344695533/572B42C7EDC34C96862D9C89DAC67DB7" alt="C++ 11"></p>
+<p>前段时间一直忙于一些琐碎的事情，直到最近才终于有时间静下心来看看书，于是趁这段时间详读了一遍C++ Primer（第5版）,同时将书中很多比较好的内容整理在博客当中，便于翻阅记忆。</p>
+<p>C++ Primer（第5版）是一本很好的学习C++基础的书籍。它不仅完整的介绍了C++的基础知识，同时也介绍了很多最新的C++11标准。其最有价值的地方在于书中有很多小的Note,这些Note提醒开发者需要注意的重点部分，常见的开发陷阱以及良好的程序设计习惯。下面是整理出的一些重要的Note:</p>
+<h4 id="Note1-类的隐式this指针">Note1.类的隐式this指针</h4><p>每个类中都包含一个隐式的this指针，指向对象本身。this是一个常量指针，不能改变this指针中保存的地址。<br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">//</span> 添加<span class="reserved">const</span>关键字将隐式<span class="keyword">this</span>指针类型变成指向常量的常量指针</span><br><span class="line">returnVal funcName() <span class="reserved">const</span> &#123;<span class="keyword">return</span> <span class="keyword">this</span>-&gt;classMember;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>默认的this指针类型是指向类类型的非常量版本的常量指针，通过向类的成员函数参数列表后面添加const关键字，就可以将隐式this指针类型变成指向常量的常量指针，像这样使用的成员函数被称作常量成员函数<em>（const member function）</em>。这样就可以让常量对象能够调用该函数了（常量对象不能调用普通成员函数）。</p>
+<h4 id="Note2-_为每个类显式的定义构造函数">Note2. 为每个类显式的定义构造函数</h4><p>如果没有为类提供显式的构造函数，编译器会为这个类提供<strong>合成的默认构造函数（synthesized default constructor）</strong>。但我们不能依赖于编译器提供的默认构造函数去构造一个类，这样是不明智的选择，原因有三：</p>
+<ul>
+<li><em>编译器只有在我们没有为类提供任何构造函数的情况下，才会生成一个合成的默认构造函数。如果我们显式的提供了一个带参数的构造函数，这个时候这个类就没有默认构造函数了。</em></li>
+<li><em>对于某些类来说，合成的默认构造函数可能执行错误的操作，用户在创建类的时候可能得到一些未定义的值</em></li>
+<li><em>编译器不能为某些类提供合成的默认构造函数。例如，如果类中包含一个其他类类型的成员且这个类型没有默认构造函数，那么编译器将无法初始化该成员。</em></li>
+</ul>
+<h4 id="Note3-_封装的益处">Note3. 封装的益处</h4><p>封装（encapsulation）的意思是隐藏类的具体实现细节,分离类的接口和实现。封装有两个重要优点：</p>
+<pre><code><span class="bullet">1. </span>确保用户代码不会无意间破坏封装对象的状态；
+<span class="bullet">2. </span>被封装的类的具体实现细节可以随时改变，而无需调整用户级别的代码
+</code></pre><h4 id="Note4-_尽量通过构造函数初始值列表显式的初始化成员">Note4. 尽量通过构造函数初始值列表显式的初始化成员</h4><p>通过构造函数初始值列表显示的初始化成员，可以在执行类的构造函数之前直接初始化该成员。<br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span>::<span class="function"><span class="keyword">constructor</span><span class="params">(value1, value2)</span>:</span>classMember1(value1), classMember2(value2)<span class="comment">&#123;&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>另外一种构造函数方式如下：<br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span>::<span class="function"><span class="keyword">constructor</span><span class="params">(value1, value2)</span></span><br><span class="line"><span class="comment">&#123;</span><br><span class="line">	classMember1 = value1;</span><br><span class="line">	classMember2 = value2;</span><br><span class="line">&#125;</span></span></span><br></pre></td></tr></table></figure></p>
+<p>这种方式先定义变量，然后再执行赋值操作，降低了整体执行的效率。同时，需要注意的是在初始化过程中尽量避免使用某些成员去初始化其他成员，这样容易引起编译器混乱，造成程序执行错误。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://hivestudio.com/2015/07/06/C++ Primer-类的基本特性/" data-id="ciie7pt7g0009jk55weyplne5" class="article-share-link">分享到</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/07/08/C++ Primer-面向对象的程序设计/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          C++ Primer-面向对象的程序设计
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/06/17/markdown/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">Markdown语法简介</div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+
+
+</section>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 HIVE STUDIO<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+
+
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
