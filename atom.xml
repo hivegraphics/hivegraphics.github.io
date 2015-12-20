@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   
-  <title><![CDATA[一直都很呆的博客]]></title>
-  <subtitle><![CDATA[随心而行]]></subtitle>
+  <title><![CDATA[HIVE STUDIO]]></title>
+  <subtitle><![CDATA[HIVE STUDIO]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://leechengpeng.com//"/>
+  <link href="http://hivestudio.com//"/>
   <updated>2015-08-25T03:23:08.000Z</updated>
-  <id>http://leechengpeng.com//</id>
+  <id>http://hivestudio.com//</id>
   
   <author>
-    <name><![CDATA[Lee ChengPeng]]></name>
+    <name><![CDATA[HIVE STUDIO]]></name>
     
   </author>
   
@@ -17,8 +17,8 @@
   
   <entry>
     <title><![CDATA[String与数值之间的转换]]></title>
-    <link href="http://leechengpeng.com/2015/08/25/String%E4%B8%8E%E6%95%B0%E5%80%BC%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/"/>
-    <id>http://leechengpeng.com/2015/08/25/String与数值之间的转换/</id>
+    <link href="http://hivestudio.com/2015/08/24/String%E4%B8%8E%E6%95%B0%E5%80%BC%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/"/>
+    <id>http://hivestudio.com/2015/08/24/String与数值之间的转换/</id>
     <published>2015-08-24T16:00:00.000Z</published>
     <updated>2015-08-25T03:23:08.000Z</updated>
     <content type="html"><![CDATA[<p>在编写C++应用程序时，难免不会遇到String和int、short、double等数值类型之间的转换。但在网上搜索关于这方面的转化时，都是一些atoi，itoa, sprintf之类的比较老的方式, 在使用和转化都是很麻烦的。在C++新标准中引入了多个函数，实现数值数据与标准库string之间的转化，下面我将用代码的方式介绍这些转换函数：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">42</span>;</span><br><span class="line">std::<span class="built_in">string</span> str = std::to_string(i); <span class="comment">// 将整数转换成字符串</span></span><br><span class="line"><span class="keyword">double</span> d = stod(str); <span class="comment">// 将字符串转换成浮点数</span></span><br></pre></td></tr></table></figure></p>
@@ -29,14 +29,14 @@
     <![CDATA[<p>在编写C++应用程序时，难免不会遇到String和int、short、double等数值类型之间的转换。但在网上搜索关于这方面的转化时，都是一些atoi，itoa, sprintf之类的比较老的方式, 在使用和转化都是很麻烦的。在C++新标准中引入了多个函数，实现数值数据与]]>
     </summary>
     
-      <category term="技术归档" scheme="http://leechengpeng.com/categories/%E6%8A%80%E6%9C%AF%E5%BD%92%E6%A1%A3/"/>
+      <category term="技术归档" scheme="http://hivestudio.com/categories/%E6%8A%80%E6%9C%AF%E5%BD%92%E6%A1%A3/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[C++ Primer-基础知识]]></title>
-    <link href="http://leechengpeng.com/2015/07/19/C++%20Primer-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    <id>http://leechengpeng.com/2015/07/19/C++ Primer-基础知识/</id>
+    <link href="http://hivestudio.com/2015/07/18/C++%20Primer-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>http://hivestudio.com/2015/07/18/C++ Primer-基础知识/</id>
     <published>2015-07-18T16:00:00.000Z</published>
     <updated>2015-07-28T01:34:03.000Z</updated>
     <content type="html"><![CDATA[<h5 id="1-_初始化和赋值">1. 初始化和赋值</h5><p>初始化不是赋值，初始化的含义是创建变量时给其赋予一初始值，而赋值的含义是把对象的当前值擦出，然后再用一个新值替换。</p>
@@ -64,14 +64,14 @@
 <h5 id="2-_使用列表初始化为变量赋初值">2. 使用列表初始化为变量赋初值]]>
     </summary>
     
-      <category term="学习笔记" scheme="http://leechengpeng.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="http://hivestudio.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[C++ Primer-面向对象的程序设计]]></title>
-    <link href="http://leechengpeng.com/2015/07/09/C++%20Primer-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    <id>http://leechengpeng.com/2015/07/09/C++ Primer-面向对象的程序设计/</id>
+    <link href="http://hivestudio.com/2015/07/08/C++%20Primer-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    <id>http://hivestudio.com/2015/07/08/C++ Primer-面向对象的程序设计/</id>
     <published>2015-07-08T16:00:00.000Z</published>
     <updated>2015-07-10T08:48:28.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://note.youdao.com/yws/public/resource/ef71b77d8497bd5ca684b81dbf50d4ec/web1436344695533/572B42C7EDC34C96862D9C89DAC67DB7" alt="面向对象"></p>
@@ -93,14 +93,14 @@
     <![CDATA[<p><img src="http://note.youdao.com/yws/public/resource/ef71b77d8497bd5ca684b81dbf50d4ec/web1436344695533/572B42C7EDC34C96862D9C89DAC67DB7" ]]>
     </summary>
     
-      <category term="学习笔记" scheme="http://leechengpeng.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="http://hivestudio.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[C++ Primer-类的基本特性]]></title>
-    <link href="http://leechengpeng.com/2015/07/07/C++%20Primer-%E7%B1%BB%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%89%B9%E6%80%A7/"/>
-    <id>http://leechengpeng.com/2015/07/07/C++ Primer-类的基本特性/</id>
+    <link href="http://hivestudio.com/2015/07/06/C++%20Primer-%E7%B1%BB%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%89%B9%E6%80%A7/"/>
+    <id>http://hivestudio.com/2015/07/06/C++ Primer-类的基本特性/</id>
     <published>2015-07-06T16:00:00.000Z</published>
     <updated>2015-07-09T04:59:32.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://note.youdao.com/yws/public/resource/ef71b77d8497bd5ca684b81dbf50d4ec/web1436344695533/572B42C7EDC34C96862D9C89DAC67DB7" alt="C++ 11"></p>
@@ -125,14 +125,14 @@
     <![CDATA[<p><img src="http://note.youdao.com/yws/public/resource/ef71b77d8497bd5ca684b81dbf50d4ec/web1436344695533/572B42C7EDC34C96862D9C89DAC67DB7" ]]>
     </summary>
     
-      <category term="学习笔记" scheme="http://leechengpeng.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="http://hivestudio.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Markdown语法简介]]></title>
-    <link href="http://leechengpeng.com/2015/06/17/markdown/"/>
-    <id>http://leechengpeng.com/2015/06/17/markdown/</id>
+    <link href="http://hivestudio.com/2015/06/17/markdown/"/>
+    <id>http://hivestudio.com/2015/06/17/markdown/</id>
     <published>2015-06-17T13:12:19.000Z</published>
     <updated>2015-07-27T02:54:45.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://note.youdao.com/yws/public/resource/ef71b77d8497bd5ca684b81dbf50d4ec/web1436344111702/235B28F2A3CB4EF2A2D75AC3000AA614" alt="Markdown"></p>
@@ -221,7 +221,7 @@ ____
     <![CDATA[<p><img src="http://note.youdao.com/yws/public/resource/ef71b77d8497bd5ca684b81dbf50d4ec/web1436344111702/235B28F2A3CB4EF2A2D75AC3000AA614" ]]>
     </summary>
     
-      <category term="技术归档" scheme="http://leechengpeng.com/categories/%E6%8A%80%E6%9C%AF%E5%BD%92%E6%A1%A3/"/>
+      <category term="技术归档" scheme="http://hivestudio.com/categories/%E6%8A%80%E6%9C%AF%E5%BD%92%E6%A1%A3/"/>
     
   </entry>
   
