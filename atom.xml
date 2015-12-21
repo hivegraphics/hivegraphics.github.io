@@ -5,7 +5,7 @@
   <subtitle><![CDATA[HIVE STUDIO]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://hivestudio.com//"/>
-  <updated>2015-08-25T03:23:08.000Z</updated>
+  <updated>2015-12-21T15:10:02.795Z</updated>
   <id>http://hivestudio.com//</id>
   
   <author>
@@ -16,212 +16,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[String与数值之间的转换]]></title>
-    <link href="http://hivestudio.com/2015/08/24/String%E4%B8%8E%E6%95%B0%E5%80%BC%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/"/>
-    <id>http://hivestudio.com/2015/08/24/String与数值之间的转换/</id>
+    <title><![CDATA[test]]></title>
+    <link href="http://hivestudio.com/2015/08/24/test/"/>
+    <id>http://hivestudio.com/2015/08/24/test/</id>
     <published>2015-08-24T16:00:00.000Z</published>
-    <updated>2015-08-25T03:23:08.000Z</updated>
-    <content type="html"><![CDATA[<p>在编写C++应用程序时，难免不会遇到String和int、short、double等数值类型之间的转换。但在网上搜索关于这方面的转化时，都是一些atoi，itoa, sprintf之类的比较老的方式, 在使用和转化都是很麻烦的。在C++新标准中引入了多个函数，实现数值数据与标准库string之间的转化，下面我将用代码的方式介绍这些转换函数：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">42</span>;</span><br><span class="line">std::<span class="built_in">string</span> str = std::to_string(i); <span class="comment">// 将整数转换成字符串</span></span><br><span class="line"><span class="keyword">double</span> d = stod(str); <span class="comment">// 将字符串转换成浮点数</span></span><br></pre></td></tr></table></figure></p>
-<p>当然还可以利用string库里面提供的一些函数来实现以下更高级的功能，比如下面的转换string中的第一可能出现的数值字符<br><figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">std::string <span class="keyword">str</span> = <span class="string">"pi = 3.14"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 转换str中以数字快开始的第一个子串, d = 3.14</span></span><br><span class="line"><span class="keyword">double</span> d = stod(<span class="keyword">str</span>.substr(<span class="keyword">str</span>.find_first_of(<span class="string">"0123456789"</span>)));</span><br></pre></td></tr></table></figure></p>
-<p><strong>string和数值之间的转换函数&gt;&gt;&gt;&gt;</strong><br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">to_string</span><span class="params">(val)</span></span> <span class="comment">// val是任何基本算法类型</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// p：size_t指针，用来保存s中第一个非数值字符的下标，默认为0，即不保存下标</span></span><br><span class="line"><span class="comment">// b: 表示转换数值所用的基数</span></span><br><span class="line"><span class="function"><span class="title">stoi</span><span class="params">(s, p, b)</span></span>  <span class="comment">// int</span></span><br><span class="line"><span class="function"><span class="title">stol</span><span class="params">(s, p, b)</span></span>  <span class="comment">// long</span></span><br><span class="line"><span class="function"><span class="title">stoul</span><span class="params">(s, p, b)</span></span>  <span class="comment">// unsigned long</span></span><br><span class="line"><span class="function"><span class="title">stoll</span><span class="params">(s, p, b)</span></span>  <span class="comment">// long long</span></span><br><span class="line"><span class="function"><span class="title">stoull</span><span class="params">(s, p, b)</span></span>  <span class="comment">// unsigned long long</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">stof</span><span class="params">(s, p)</span></span>  <span class="comment">// float</span></span><br><span class="line"><span class="function"><span class="title">stod</span><span class="params">(s, p)</span></span>  <span class="comment">// double</span></span><br><span class="line"><span class="function"><span class="title">stold</span><span class="params">(s, p)</span></span>  <span class="comment">// long double</span></span><br></pre></td></tr></table></figure></p>
+    <updated>2015-12-21T15:10:02.795Z</updated>
+    <content type="html"><![CDATA[<p>this is just a test</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>在编写C++应用程序时，难免不会遇到String和int、short、double等数值类型之间的转换。但在网上搜索关于这方面的转化时，都是一些atoi，itoa, sprintf之类的比较老的方式, 在使用和转化都是很麻烦的。在C++新标准中引入了多个函数，实现数值数据与]]>
+    <![CDATA[<p>this is just a test</p>
+]]>
     </summary>
     
-      <category term="技术归档" scheme="http://hivestudio.com/categories/%E6%8A%80%E6%9C%AF%E5%BD%92%E6%A1%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[C++ Primer-基础知识]]></title>
-    <link href="http://hivestudio.com/2015/07/18/C++%20Primer-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    <id>http://hivestudio.com/2015/07/18/C++ Primer-基础知识/</id>
-    <published>2015-07-18T16:00:00.000Z</published>
-    <updated>2015-07-28T01:34:03.000Z</updated>
-    <content type="html"><![CDATA[<h5 id="1-_初始化和赋值">1. 初始化和赋值</h5><p>初始化不是赋值，初始化的含义是创建变量时给其赋予一初始值，而赋值的含义是把对象的当前值擦出，然后再用一个新值替换。</p>
-<h5 id="2-_使用列表初始化为变量赋初值">2. 使用列表初始化为变量赋初值</h5><p>使用列表初始化可以防止无意间错误的给一变量赋初值，编译器会主动提示此错误。这种错误往往发生在不经意之间，所以尽量使用列表初始化为一变量赋初值。<br><figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 在VS2013里编译器提示错误：</span></span><br><span class="line"><span class="comment">// conversion from 'long double' to 'int' requires a narrowing conversion</span></span><br><span class="line"><span class="keyword">long</span> <span class="keyword">double</span> ld = <span class="number">3.1415926</span>;</span><br><span class="line"><span class="keyword">int</span> a&#123;ld&#125;;</span><br></pre></td></tr></table></figure></p>
-<h5 id="3-_建议初始化每一个内置类型的变量">3. 建议初始化每一个内置类型的变量</h5><p>程序中，我们尽量显式的给每一内置类型变量赋予初始值，防止变量因为未赋初值而变成未定义的类型，此时再试图拷贝或者其它形式来访问该变量将引发程序错误。使用未初始化的变量是一种错误的编程行为。</p>
-<h5 id="4-_在第一次使用对象的地方附近定义它可以让我们更容易找到变量的定义，再者就是我们可以通过它的定义给它一个合理的初值。">4. 在第一次使用对象的地方附近定义它可以让我们更容易找到变量的定义，再者就是我们可以通过它的定义给它一个合理的初值。</h5><h5 id="5-_初始化所有指针">5. 初始化所有指针</h5><p>使用未经初始化的指针是引发运行时错误的一大原因，在C++11标准下，建议使用nullptr初始化指针。</p>
-<h5 id="6-_面对一条比较复杂指针或引用的声明语句时，从右往左阅读可以很清楚的理解其具体含义">6. 面对一条比较复杂指针或引用的声明语句时，从右往左阅读可以很清楚的理解其具体含义</h5><figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> ival = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> *pi = &amp;ival;    <span class="comment">// pi指向一个int型的数</span></span><br><span class="line"><span class="keyword">int</span> **ppi = &amp;pi;    <span class="comment">// ppi指向一个int型的指针</span></span><br></pre></td></tr></table></figure>
-<p>此时可以将**ppi从右往左阅读<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 括号里面（<span class="keyword">*</span>ppi）表示ppi是一个指针</span><br><span class="line">// 这个指针（<span class="keyword">*</span>ppi）指向一个int <span class="keyword">*</span>的指针</span><br><span class="line">// 即：ppi指向一个int型的指针</span><br><span class="line">int <span class="keyword">*</span>(<span class="keyword">*</span>ppi)</span><br></pre></td></tr></table></figure></p>
-<p>另外一个例子如下所示：*(&amp;r),首先r是一个引用，对int指针p的引用<br><figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> *p;</span><br><span class="line"><span class="keyword">int</span> *&amp;r = p;</span><br></pre></td></tr></table></figure></p>
-<h5 id="7-_声明和定义">7. 声明和定义</h5><p>为了支持<strong>分离式编译（将源文件分割成若干文件，每个文件可以独立编译）</strong>，C++将声明和定义区分开来。<strong>声明（declaration）</strong>使得名字为程序所知，一个文件如果想使用别处定义的名字则必须包含对那个名字的声明。而<strong>定义（definition）</strong>则负责创建与名字关联的实体。它们有以下两点区别：</p>
-<hr>
-<ul>
-<li><strong>声明和定义都规定了变量的类型和名字，但定义还必须为变量申请存储空间</strong></li>
-<li><strong>变量只能被定义一次，但可以被多次声明。</strong></li>
-</ul>
-<hr>
-<h5 id="8-_string对象和字面值拼接，必须保证加法运算符（+）的两侧至少有一个是string">8. string对象和字面值拼接，必须保证加法运算符（+）的两侧至少有一个是string</h5><p>因为某些历史原因，同时也为了兼容C，所以C++中的字符串字面值并不是与标准库类型string对象。在字符串字面值与string类型拼接时，必须确保每个加法运算符的两侧的运算对象至少有一个是string<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">string</span> S1 = <span class="string">"Hello"</span>;</span><br><span class="line"><span class="comment">//正确：将一个string对象和一个字面值相加</span></span><br><span class="line"><span class="built_in">string</span> S2 = S1 + <span class="string">", world"</span>;	</span><br><span class="line"><span class="comment">//错误：不能将字面值直接相加</span></span><br><span class="line"><span class="built_in">string</span> S3 = <span class="string">"Hello"</span> + <span class="string">", world"</span>;</span><br></pre></td></tr></table></figure></p>
-<h5 id="9-_简洁是一种美德">9. 简洁是一种美德</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 控制一个vector对象输出对象内容直到遇到一个负数为止</span></span><br><span class="line"><span class="keyword">auto</span> pbeg = v.begin();</span><br><span class="line"><span class="keyword">while</span> (pbeg != v.end &amp;&amp; *pbeg &gt;= <span class="number">0</span>)</span><br><span class="line">&#123;</span><br><span class="line">	std::<span class="built_in">cout</span> &lt;&lt; *pbeg++ &lt;&lt; std::endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>第5行的<code>*pbeg++</code>等同于<code>*(pbeg++)</code>，先将pbeg向后移动一个位置，然后再返回pbeg的初始值的副本作为其求值结果。虽然此处的优先级顺序不容易记住，但其实这个一种很广泛、有效的编程风格。当对这种风格熟悉过后，编码<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">std::<span class="built_in">cout</span> &lt;&lt; *iter++ &lt;&lt; std::endl;</span><br></pre></td></tr></table></figure></p>
-<p>要比书写下面等价的语句更简洁、也更少出错<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">std::<span class="built_in">cout</span> &lt;&lt; *iter &lt;&lt; std::endl;</span><br><span class="line">++iter;</span><br></pre></td></tr></table></figure></p>
-<p>大多数C++程序追求简洁，摒弃冗长。一旦掌握了这种类似的简洁的写法后，程序出错的可能性也大大降低了。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<h5 id="1-_初始化和赋值">1. 初始化和赋值</h5><p>初始化不是赋值，初始化的含义是创建变量时给其赋予一初始值，而赋值的含义是把对象的当前值擦出，然后再用一个新值替换。</p>
-<h5 id="2-_使用列表初始化为变量赋初值">2. 使用列表初始化为变量赋初值]]>
-    </summary>
-    
-      <category term="学习笔记" scheme="http://hivestudio.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[C++ Primer-面向对象的程序设计]]></title>
-    <link href="http://hivestudio.com/2015/07/08/C++%20Primer-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    <id>http://hivestudio.com/2015/07/08/C++ Primer-面向对象的程序设计/</id>
-    <published>2015-07-08T16:00:00.000Z</published>
-    <updated>2015-07-10T08:48:28.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://note.youdao.com/yws/public/resource/ef71b77d8497bd5ca684b81dbf50d4ec/web1436344695533/572B42C7EDC34C96862D9C89DAC67DB7" alt="面向对象"></p>
-<p>面向对象的程序设计（Object-oriented programming）的核心思想是数据抽象、继承（Inheritance）和动态绑定（Dynamic binding）。通过使用数据抽象，我们可以将类的接口与实现分离；使用继承，可以定义相似的类型并对其相似关系建模；使用动态绑定，可以在一定程度上忽略相似类型的区别，从而以统一的方式使用它们的对象。</p>
-<h4 id="Note1-_派生类构造函数应显式的调用基类构造函数来完成整体初始化">Note1. 派生类构造函数应显式的调用基类构造函数来完成整体初始化</h4><p>每个类控制它自己的成员初始化过程，尽管派生类对象中含有从基类继承而来的成员，但是派生类并不能直接初始化这些成员。和其他创建基类的代码一样，派生类也必须使用基类的构造函数来初始化它的基类部分。<br><figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 首先初始化基类部分，然后再按照声明顺序依次初始化派生类成员</span><br><span class="line"><span class="type">CDeriveConstructor</span>(<span class="typedef"><span class="keyword">type</span> p1, <span class="keyword">type</span> p2, <span class="keyword">type</span> p3, <span class="keyword">type</span> p4) : <span class="type">CBase</span><span class="container">(<span class="title">p1</span>,<span class="title">p2</span>)</span> </span></span><br><span class="line">                , <span class="type">DeriveMember1</span>(p3), <span class="type">DeriveMember2</span>(p4) &#123; &#125;</span><br></pre></td></tr></table></figure></p>
-<p>尽管从语法上的角度我们可以在派生类的构造函数体中给它的公有（Public）或受保护（Protected）成员直接赋值，这样做法是不明智的。<strong>每个类负责定义自己的接口</strong>，要想与类的对象进行交互就应该使用该类提供的接口，因此在派生类通过构造函数初始化对象的时候，建议调用基类的构造函数进行初始化。</p>
-<h4 id="Note2-_使用override说明符说明派生类中的虚函数">Note2. 使用override说明符说明派生类中的虚函数</h4><p>在派生类中如果定义了一个函数与基类中的虚函数的名字相同但是形参列表不同，这是合法的行为，编译器会认为这是一个独立的新函数。但这样可能会违背了我们原本的想法，因为我们本来希望派生类覆盖掉基类的版本，但是一不小心把参数列表弄错了。</p>
-<p>编程过程中想要调试这样的错误是非常困难的，所以在C++11新标准中建议使用override说明符说明派生类中需要覆盖基类版本的虚函数，此时编译器就会自动的为我们检查覆盖的虚函数是否有误。<br><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title">A</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">virtual</span> <span class="keyword">void</span> f（<span class="keyword">int</span>） <span class="keyword">const</span>；</span><br><span class="line">&#125;；</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">B</span> : <span class="title">public</span> <span class="title">A</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// 正确：使用override显式的说明覆盖基类的版本f(int)</span></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">(<span class="keyword">int</span>)</span> <span class="keyword">const</span> <span class="keyword">override</span></span>;</span><br><span class="line">	<span class="comment">// 错误：没有形如f()的基类版本（编译器报错）</span></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">()</span> <span class="keyword">const</span> <span class="keyword">override</span></span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
-<h4 id="Note3-_公有继承和私有继承">Note3. 公有继承和私有继承</h4><p>类对其继承来的成员访问权限受到两个因素影响：</p>
-<ol>
-<li>基类中该成员的访问说明符</li>
-<li>派生类的派生列表中的访问说明符</li>
-</ol>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title">Base</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">pub_mem</span><span class="params">()</span></span>;</span><br><span class="line"><span class="keyword">protected</span>:</span><br><span class="line">	<span class="keyword">int</span> prot_mem;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	<span class="keyword">char</span> priv_mem;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">pub_Derv</span> : <span class="title">public</span> <span class="title">Base</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// 正确：派生类能访问基类的protected成员</span></span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">f</span><span class="params">()</span> </span>&#123; <span class="keyword">return</span> prot_mem; &#125;</span><br><span class="line">	<span class="comment">// 错误：基类的private成员是无法被派生类访问到的</span></span><br><span class="line">	<span class="function"><span class="keyword">char</span> <span class="title">g</span><span class="params">()</span> </span>&#123; <span class="keyword">return</span> priv_mem; &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">priv_Derv</span> : <span class="title">private</span> <span class="title">Base</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// 正确：派生列表说明符不影响派生类访问基类的protected成员</span></span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">f1</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123; <span class="keyword">return</span> prot_mem; &#125;</span><br><span class="line">	<span class="comment">// 错误：基类的private成员是无法被派生类访问到的</span></span><br><span class="line">	<span class="function"><span class="keyword">char</span> <span class="title">g1</span><span class="params">()</span> </span>&#123; <span class="keyword">return</span> priv_mem; &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	priv_Derv privDerv;</span><br><span class="line">	pub_Derv  pubDerv;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 错误：函数成员pub_mem()在privDerv中是私有成员，无法被访问到</span></span><br><span class="line">	privDerv.pub_mem();</span><br><span class="line">	<span class="comment">// 正确：函数成员pub_mem()在pubDerv中是公有成员，可以被访问到</span></span><br><span class="line">	pubDerv.pub_mem();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>公有继承和私有继承制只控制<strong>派生类用户</strong>对基类成员的访问权限，但对于<strong>派生类开发者</strong>来说只受到基类对应成员的访问说明符的影响（即：如果基类成员是公有的或受保护的，开发者不管是公有继承或是私有继承都能正常访问；但如果基类成员是私有的，不管是私有继承还是公有继承都不能访问到该私有成员）<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span><br><span class="line">不显式的编写派生列表public或private</span><br><span class="line">*/</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Base</span></span>&#123; &#125;;</span><br><span class="line"><span class="comment">// 默认public继承</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">D1</span> : <span class="title">Base</span></span>&#123; &#125;;</span><br><span class="line"><span class="comment">// 默认private继承</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">D2</span> : <span class="title">Base</span></span>&#123; &#125;;</span><br></pre></td></tr></table></figure></p>
-<p>struct和class唯一的区别只有默认访问权限的不同（struct默认public，class默认private），就没有其他任何更深层次的不同了。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://note.youdao.com/yws/public/resource/ef71b77d8497bd5ca684b81dbf50d4ec/web1436344695533/572B42C7EDC34C96862D9C89DAC67DB7" ]]>
-    </summary>
-    
-      <category term="学习笔记" scheme="http://hivestudio.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[C++ Primer-类的基本特性]]></title>
-    <link href="http://hivestudio.com/2015/07/06/C++%20Primer-%E7%B1%BB%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%89%B9%E6%80%A7/"/>
-    <id>http://hivestudio.com/2015/07/06/C++ Primer-类的基本特性/</id>
-    <published>2015-07-06T16:00:00.000Z</published>
-    <updated>2015-07-09T04:59:32.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://note.youdao.com/yws/public/resource/ef71b77d8497bd5ca684b81dbf50d4ec/web1436344695533/572B42C7EDC34C96862D9C89DAC67DB7" alt="C++ 11"></p>
-<p>前段时间一直忙于一些琐碎的事情，直到最近才终于有时间静下心来看看书，于是趁这段时间详读了一遍C++ Primer（第5版）,同时将书中很多比较好的内容整理在博客当中，便于翻阅记忆。</p>
-<p>C++ Primer（第5版）是一本很好的学习C++基础的书籍。它不仅完整的介绍了C++的基础知识，同时也介绍了很多最新的C++11标准。其最有价值的地方在于书中有很多小的Note,这些Note提醒开发者需要注意的重点部分，常见的开发陷阱以及良好的程序设计习惯。下面是整理出的一些重要的Note:</p>
-<h4 id="Note1-类的隐式this指针">Note1.类的隐式this指针</h4><p>每个类中都包含一个隐式的this指针，指向对象本身。this是一个常量指针，不能改变this指针中保存的地址。<br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">//</span> 添加<span class="reserved">const</span>关键字将隐式<span class="keyword">this</span>指针类型变成指向常量的常量指针</span><br><span class="line">returnVal funcName() <span class="reserved">const</span> &#123;<span class="keyword">return</span> <span class="keyword">this</span>-&gt;classMember;&#125;</span><br></pre></td></tr></table></figure></p>
-<p>默认的this指针类型是指向类类型的非常量版本的常量指针，通过向类的成员函数参数列表后面添加const关键字，就可以将隐式this指针类型变成指向常量的常量指针，像这样使用的成员函数被称作常量成员函数<em>（const member function）</em>。这样就可以让常量对象能够调用该函数了（常量对象不能调用普通成员函数）。</p>
-<h4 id="Note2-_为每个类显式的定义构造函数">Note2. 为每个类显式的定义构造函数</h4><p>如果没有为类提供显式的构造函数，编译器会为这个类提供<strong>合成的默认构造函数（synthesized default constructor）</strong>。但我们不能依赖于编译器提供的默认构造函数去构造一个类，这样是不明智的选择，原因有三：</p>
-<ul>
-<li><em>编译器只有在我们没有为类提供任何构造函数的情况下，才会生成一个合成的默认构造函数。如果我们显式的提供了一个带参数的构造函数，这个时候这个类就没有默认构造函数了。</em></li>
-<li><em>对于某些类来说，合成的默认构造函数可能执行错误的操作，用户在创建类的时候可能得到一些未定义的值</em></li>
-<li><em>编译器不能为某些类提供合成的默认构造函数。例如，如果类中包含一个其他类类型的成员且这个类型没有默认构造函数，那么编译器将无法初始化该成员。</em></li>
-</ul>
-<h4 id="Note3-_封装的益处">Note3. 封装的益处</h4><p>封装（encapsulation）的意思是隐藏类的具体实现细节,分离类的接口和实现。封装有两个重要优点：</p>
-<pre><code><span class="bullet">1. </span>确保用户代码不会无意间破坏封装对象的状态；
-<span class="bullet">2. </span>被封装的类的具体实现细节可以随时改变，而无需调整用户级别的代码
-</code></pre><h4 id="Note4-_尽量通过构造函数初始值列表显式的初始化成员">Note4. 尽量通过构造函数初始值列表显式的初始化成员</h4><p>通过构造函数初始值列表显示的初始化成员，可以在执行类的构造函数之前直接初始化该成员。<br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span>::<span class="function"><span class="keyword">constructor</span><span class="params">(value1, value2)</span>:</span>classMember1(value1), classMember2(value2)<span class="comment">&#123;&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>另外一种构造函数方式如下：<br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span>::<span class="function"><span class="keyword">constructor</span><span class="params">(value1, value2)</span></span><br><span class="line"><span class="comment">&#123;</span><br><span class="line">	classMember1 = value1;</span><br><span class="line">	classMember2 = value2;</span><br><span class="line">&#125;</span></span></span><br></pre></td></tr></table></figure></p>
-<p>这种方式先定义变量，然后再执行赋值操作，降低了整体执行的效率。同时，需要注意的是在初始化过程中尽量避免使用某些成员去初始化其他成员，这样容易引起编译器混乱，造成程序执行错误。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://note.youdao.com/yws/public/resource/ef71b77d8497bd5ca684b81dbf50d4ec/web1436344695533/572B42C7EDC34C96862D9C89DAC67DB7" ]]>
-    </summary>
-    
-      <category term="学习笔记" scheme="http://hivestudio.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Markdown语法简介]]></title>
-    <link href="http://hivestudio.com/2015/06/17/markdown/"/>
-    <id>http://hivestudio.com/2015/06/17/markdown/</id>
-    <published>2015-06-17T13:12:19.000Z</published>
-    <updated>2015-07-27T02:54:45.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://note.youdao.com/yws/public/resource/ef71b77d8497bd5ca684b81dbf50d4ec/web1436344111702/235B28F2A3CB4EF2A2D75AC3000AA614" alt="Markdown"></p>
-<p>Markdown是一种轻量级的标记语言，它使用简易的纯文本格式编写文档，然后再转化成有效的HTML文档。我在第一次使用Markdown时便被她的简洁深深的吸引住了，她让我能够更专注的去编写文档的内容而不需要花太多时间去注意文档的格式。</p>
-<p>本文通过整理网上各种资料，总结了Markdown的一些基本语法，用作参考文档。同时，推荐一款在线Markdown编辑网站—<a href="https://www.zybuluo.com" target="_blank" rel="external">作业部落</a>，它提供了很多方便实用的功能和强大的实时预览功能。</p>
-<h3 id="1-_斜体和粗体">1. 斜体和粗体</h3><p>使用 * 和 ** 表示斜体和粗体。</p>
-<pre><code><span class="keyword">*</span>斜体<span class="keyword">*</span>
-<span class="keyword">*</span><span class="keyword">*</span>粗体<span class="keyword">*</span><span class="keyword">*</span>
-</code></pre><p>效果：<em>斜体</em>，<strong>粗体</strong></p>
-<h3 id="2-_超链接">2. 超链接</h3><p>使用 [描述](链接地址) 为文字增加超链接。</p>
-<pre><code>点击[<span class="link_label">本人博客</span>](<span class="link_url">http://leechengpeng.com/</span>)可以跳转到我的博客。
-</code></pre><p>效果：点击<a href="http://leechengpeng.com/" target="_blank" rel="external">本人博客</a>可以跳转到我的博客。</p>
-<h3 id="3-_分级标题">3. 分级标题</h3><p>Markdown有两种类型的标题格式：Setext和atx</p>
-<h4 id="3-1_Setext">3.1 Setext</h4><p>在文本下一行添加一行”=”表示H1<br>在文本下一行添加一行”-“表示H2</p>
-<pre><code><span class="header">this is an H1
-=============</span>
-<span class="header">this is an H2
--------------</span>
-</code></pre><p>效果如下：</p>
-<hr>
-<h1 id="this_is_an_H1">this is an H1</h1><h2 id="this_is_an_H2">this is an H2</h2><hr>
-<h4 id="3-2_atx">3.2 atx</h4><p>在行首插入1到6个“#”，表示标题的级数<br><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#H1</span></span><br><span class="line"><span class="preprocessor">##H2</span></span><br><span class="line"><span class="preprocessor">###H3</span></span><br><span class="line"><span class="preprocessor">####H4</span></span><br><span class="line"><span class="preprocessor">#####H5</span></span><br><span class="line"><span class="preprocessor">######H6</span></span><br></pre></td></tr></table></figure></p>
-<p>效果如下：</p>
-<hr>
-<h1 id="H1">H1</h1><h2 id="H2">H2</h2><h3 id="H3">H3</h3><h4 id="H4">H4</h4><h5 id="H5">H5</h5><h6 id="H6">H6</h6><hr>
-<h3 id="4-_列表">4. 列表</h3><h4 id="4-1_无序列表">4.1 无序列表</h4><p>使用 *，+，- 表示无序列表（注：*，+，-与文本之间需添加一个空格）。<br><figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-<span class="ruby"> <span class="constant">Red</span></span><br><span class="line"></span>-<span class="ruby"> <span class="constant">Green</span></span><br><span class="line"></span>-<span class="ruby"> <span class="constant">Blue</span></span></span><br></pre></td></tr></table></figure></p>
-<p>效果：</p>
-<ul>
-<li>Red</li>
-<li>Green</li>
-<li>Blue</li>
-</ul>
-<h4 id="4-2_有序列表">4.2 有序列表</h4><p>使用数字和点表示有序列表。<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>有序列表项1</span><br><span class="line"><span class="bullet">2. </span>有序列表项2</span><br><span class="line"><span class="bullet">3. </span>有序列表项3</span><br></pre></td></tr></table></figure></p>
-<p>效果：</p>
-<ol>
-<li>有序列表项1</li>
-<li>有序列表项2</li>
-<li>有序列表项3</li>
-</ol>
-<h3 id="5-_水平分割线">5. 水平分割线</h3><p>在空行中输入三个或者更多的 “-“, “*”, “_”即可出现一条水平分割线</p>
-<pre><code><span class="keyword">*</span> <span class="keyword">*</span> <span class="keyword">*</span>
-
-<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>
-
-<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>
-
-- - -
-
---------------
-
-____
-</code></pre><p>效果如下：</p>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<h3 id="6-_文字引用">6. 文字引用</h3><p>使用 &gt; 表示文字引用。</p>
-<pre><code><span class="blockquote">&gt; 野火烧不尽，春风吹又生。</span>
-</code></pre><p>效果如下：</p>
-<blockquote>
-<p>野火烧不尽，春风吹又生。</p>
-</blockquote>
-<h3 id="7-_代码块">7. 代码块</h3><h4 id="7-1_行内代码块">7.1 行内代码块</h4><p>使用形如 `代码` 表示行内代码块。</p>
-<pre><code>让我们聊聊 <span class="escape">`h</span>tml`
-</code></pre><p>效果：让我们聊聊 <code>html</code>。</p>
-<h4 id="7-2_简要代码块">7.2 简要代码块</h4><p>使用四个缩进空格表示代码块，但需注意缩进空格之前需空一行。<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">spaces</span> spaces spaces spaces 这是一个代码块，此行左侧有四个不可见的空格。</span><br></pre></td></tr></table></figure></p>
-<p>效果如下：</p>
-<pre><code>这是一个代码块，此行左侧有四个不可见的空格。
-</code></pre><h4 id="7-3_带行号代码块">7.3 带行号代码块</h4><p>支持四十一种编程语言的语法高亮的显示，行号显示。具体语法是：在代码块前后都添加三个```即可表示一个代码块。<br>如：<br>    ```<br>    $ sudo apt-get install vim-gnome<br>    ```<br>效果如下：<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-<span class="built_in">get</span> install <span class="keyword">vim</span>-gnome</span><br></pre></td></tr></table></figure></p>
-<p>Python 示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="decorator">@requires_authorization</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">somefunc</span><span class="params">(param1=<span class="string">''</span>, param2=<span class="number">0</span>)</span>:</span></span><br><span class="line">    <span class="string">'''A docstring'''</span></span><br><span class="line">    <span class="keyword">if</span> param1 &gt; param2: <span class="comment"># interesting</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">'Greater'</span></span><br><span class="line">    <span class="keyword">return</span> (param2 - param1 + <span class="number">1</span>) <span class="keyword">or</span> <span class="keyword">None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="prompt">&gt;&gt;&gt; </span>message = <span class="string">'''interpreter</span><br><span class="line"><span class="prompt">... </span>prompt'''</span></span><br></pre></td></tr></table></figure></p>
-<p>JavaScript 示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line">* nth element in the fibonacci series.</span><br><span class="line">* @param n &gt;= 0</span><br><span class="line">* @return the nth element, &gt;= 0.</span><br><span class="line">*/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fib</span><span class="params">(n)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> a = <span class="number">1</span>, b = <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">var</span> tmp;</span><br><span class="line">  <span class="keyword">while</span> (--n &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">    tmp = a;</span><br><span class="line">    a += b;</span><br><span class="line">    b = tmp;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">document</span>.write(fib(<span class="number">10</span>));</span><br></pre></td></tr></table></figure></p>
-<h3 id="8-_插入图像">8.  插入图像</h3><p>使用 ![描述](图片链接地址) 插入图像。<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="link_label">GitHub</span>](<span class="link_url">http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png</span>)</span><br></pre></td></tr></table></figure></p>
-<p>效果：<br><img src="http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"></p>
-<h3 id="9-_删除线">9. 删除线</h3><p>使用 ~~ 表示删除线。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~这是一段错误的文本。~~</span><br></pre></td></tr></table></figure></p>
-<p>效果：<del>这是一段错误的文本。</del></p>
-<h3 id="10-_内嵌图标">10. 内嵌图标</h3><p>本站的图标系统对外开放，在文档中输入</p>
-<pre><code><span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"icon-facebook"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
-</code></pre><p>即显示facebook的图标： <i class="icon-facebook"></i><br>替换 上述 <code>i 标签</code> 内的 <code>icon-facebook</code> 以显示不同的图标，例如：</p>
-<pre><code><span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"icon-weibo"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
-</code></pre><p>即显示微博的图标： <i class="icon-weibo"></i><br>更多的图标和玩法可以参看 <a href="http://fortawesome.github.io/Font-Awesome/3.2.1/icons/" target="_blank" rel="external">font-awesome</a> 官方网站。</p>
-<h3 id="参考文献">参考文献</h3><p><a href="http://www.ituring.com.cn/article/504" target="_blank" rel="external">Markdown语法说明（详解版）</a><br><a href="http://www.jianshu.com/p/q81RER" target="_blank" rel="external">献给写作者的 Markdown 新手指南</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://note.youdao.com/yws/public/resource/ef71b77d8497bd5ca684b81dbf50d4ec/web1436344111702/235B28F2A3CB4EF2A2D75AC3000AA614" ]]>
-    </summary>
-    
-      <category term="技术归档" scheme="http://hivestudio.com/categories/%E6%8A%80%E6%9C%AF%E5%BD%92%E6%A1%A3/"/>
+      <category term="test categories" scheme="http://hivestudio.com/categories/test-categories/"/>
     
   </entry>
   
