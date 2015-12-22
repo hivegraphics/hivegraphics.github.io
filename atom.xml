@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   
-  <title><![CDATA[HIVE STUDIO]]></title>
-  <subtitle><![CDATA[HIVE STUDIO]]></subtitle>
+  <title><![CDATA[Hive]]></title>
+  <subtitle><![CDATA[Hive]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://hivestudio.com//"/>
+  <link href="http://hive.graphics//"/>
   <updated>2015-12-21T15:10:02.795Z</updated>
-  <id>http://hivestudio.com//</id>
+  <id>http://hive.graphics//</id>
   
   <author>
-    <name><![CDATA[HIVE STUDIO]]></name>
+    <name><![CDATA[Hive]]></name>
     
   </author>
   
@@ -17,8 +17,8 @@
   
   <entry>
     <title><![CDATA[test]]></title>
-    <link href="http://hivestudio.com/2015/08/25/test/"/>
-    <id>http://hivestudio.com/2015/08/25/test/</id>
+    <link href="http://hive.graphics/2015/08/25/test/"/>
+    <id>http://hive.graphics/2015/08/25/test/</id>
     <published>2015-08-24T16:00:00.000Z</published>
     <updated>2015-12-21T15:10:02.795Z</updated>
     <content type="html"><![CDATA[<p>this is just a test</p>
@@ -28,7 +28,7 @@
 ]]>
     </summary>
     
-      <category term="test categories" scheme="http://hivestudio.com/categories/test-categories/"/>
+      <category term="test categories" scheme="http://hive.graphics/categories/test-categories/"/>
     
   </entry>
   
