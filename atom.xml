@@ -4,9 +4,9 @@
   <title><![CDATA[Hive]]></title>
   <subtitle><![CDATA[Hive]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://hivegraphics.github.io//"/>
+  <link href="http://hive.graphics//"/>
   <updated>2015-12-22T05:25:17.846Z</updated>
-  <id>http://hivegraphics.github.io//</id>
+  <id>http://hive.graphics//</id>
   
   <author>
     <name><![CDATA[Hive]]></name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title><![CDATA[是否应该在构造函数中使用this指针？]]></title>
-    <link href="http://hivegraphics.github.io/2015/12/22/%E6%98%AF%E5%90%A6%E5%BA%94%E8%AF%A5%E5%9C%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E4%B8%AD%E4%BD%BF%E7%94%A8this%E6%8C%87%E9%92%88/"/>
-    <id>http://hivegraphics.github.io/2015/12/22/是否应该在构造函数中使用this指针/</id>
+    <link href="http://hive.graphics/2015/12/22/%E6%98%AF%E5%90%A6%E5%BA%94%E8%AF%A5%E5%9C%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E4%B8%AD%E4%BD%BF%E7%94%A8this%E6%8C%87%E9%92%88/"/>
+    <id>http://hive.graphics/2015/12/22/是否应该在构造函数中使用this指针/</id>
     <published>2015-12-21T16:00:00.000Z</published>
     <updated>2015-12-22T05:25:17.846Z</updated>
     <content type="html"><![CDATA[<p>Some people feel you should not use the this pointer in a constructor because the object is not fully formed yet. However you can use this in the constructor (in the {body} and even in the initialization list) if you are careful.</p>
@@ -31,14 +31,14 @@
     <![CDATA[<p>Some people feel you should not use the this pointer in a constructor because the object is not fully formed yet. However you can use thi]]>
     </summary>
     
-      <category term="C++知识库" scheme="http://hivegraphics.github.io/categories/C-%E7%9F%A5%E8%AF%86%E5%BA%93/"/>
+      <category term="C++知识库" scheme="http://hive.graphics/categories/C-%E7%9F%A5%E8%AF%86%E5%BA%93/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[不要在构造和析构函数中调用虚函数]]></title>
-    <link href="http://hivegraphics.github.io/2015/12/22/%E4%B8%8D%E8%A6%81%E5%9C%A8%E6%9E%84%E9%80%A0%E5%92%8C%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0%E4%B8%AD%E8%B0%83%E7%94%A8%E8%99%9A%E5%87%BD%E6%95%B0/"/>
-    <id>http://hivegraphics.github.io/2015/12/22/不要在构造和析构函数中调用虚函数/</id>
+    <link href="http://hive.graphics/2015/12/22/%E4%B8%8D%E8%A6%81%E5%9C%A8%E6%9E%84%E9%80%A0%E5%92%8C%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0%E4%B8%AD%E8%B0%83%E7%94%A8%E8%99%9A%E5%87%BD%E6%95%B0/"/>
+    <id>http://hive.graphics/2015/12/22/不要在构造和析构函数中调用虚函数/</id>
     <published>2015-12-21T16:00:00.000Z</published>
     <updated>2015-12-22T05:33:44.816Z</updated>
     <content type="html"><![CDATA[<p>I’ll begin with the recap: you shouldn’t call virtual functions during construction or destruction, because the calls won’t do what you think, and if they did, you’d still be unhappy. If you’re a recovering Java or C# programmer, pay close attention to this Item, because this is a place where those languages zig, while C++ zags.</p>
@@ -64,7 +64,7 @@
     <![CDATA[<p>I’ll begin with the recap: you shouldn’t call virtual functions during construction or destruction, because the calls won’t do what you t]]>
     </summary>
     
-      <category term="C++知识库" scheme="http://hivegraphics.github.io/categories/C-%E7%9F%A5%E8%AF%86%E5%BA%93/"/>
+      <category term="C++知识库" scheme="http://hive.graphics/categories/C-%E7%9F%A5%E8%AF%86%E5%BA%93/"/>
     
   </entry>
   
