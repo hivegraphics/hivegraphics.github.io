@@ -4,9 +4,9 @@
   <title><![CDATA[Hive]]></title>
   <subtitle><![CDATA[Hive]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://hive.graphics//"/>
+  <link href="http://hivegraphics.github.io//"/>
   <updated>2015-12-21T15:10:02.795Z</updated>
-  <id>http://hive.graphics//</id>
+  <id>http://hivegraphics.github.io//</id>
   
   <author>
     <name><![CDATA[Hive]]></name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title><![CDATA[test]]></title>
-    <link href="http://hive.graphics/2015/08/25/test/"/>
-    <id>http://hive.graphics/2015/08/25/test/</id>
+    <link href="http://hivegraphics.github.io/2015/08/25/test/"/>
+    <id>http://hivegraphics.github.io/2015/08/25/test/</id>
     <published>2015-08-24T16:00:00.000Z</published>
     <updated>2015-12-21T15:10:02.795Z</updated>
     <content type="html"><![CDATA[<p>this is just a test</p>
@@ -28,7 +28,7 @@
 ]]>
     </summary>
     
-      <category term="test categories" scheme="http://hive.graphics/categories/test-categories/"/>
+      <category term="test categories" scheme="http://hivegraphics.github.io/categories/test-categories/"/>
     
   </entry>
   
