@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hive</title>
+  <title>不要在构造和析构函数中调用虚函数 | Hive</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Computer Graphics &amp; VR">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hive">
-<meta property="og:url" content="http://hivegraphics.github.io/index.html">
+  <meta name="description" content="I’ll begin with the recap: you shouldn’t call virtual functions during construction or destruction, because the calls won’t do what you think, and if they did, you’d still be unhappy. If you’re a reco">
+<meta property="og:type" content="article">
+<meta property="og:title" content="不要在构造和析构函数中调用虚函数">
+<meta property="og:url" content="http://hivegraphics.github.io/2015/12/22/不要在构造和析构函数中调用虚函数/index.html">
 <meta property="og:site_name" content="Hive">
-<meta property="og:description" content="Computer Graphics &amp; VR">
+<meta property="og:description" content="I’ll begin with the recap: you shouldn’t call virtual functions during construction or destruction, because the calls won’t do what you think, and if they did, you’d still be unhappy. If you’re a reco">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hive">
-<meta name="twitter:description" content="Computer Graphics &amp; VR">
+<meta name="twitter:title" content="不要在构造和析构函数中调用虚函数">
+<meta name="twitter:description" content="I’ll begin with the recap: you shouldn’t call virtual functions during construction or destruction, because the calls won’t do what you think, and if they did, you’d still be unhappy. If you’re a reco">
   
   
     <link rel="icon" href="favicon.png">
@@ -133,8 +133,7 @@
 </aside>
 
       
-      <section id="main">
-      <article id="post-是否应该在构造函数中使用this指针" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-不要在构造和析构函数中调用虚函数" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -142,63 +141,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/22/是否应该在构造函数中使用this指针/">是否应该在构造函数中使用this指针？</a>
-    </h1>
-  
-
-        <div class="article-meta">
-          
-  <div class="article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/12/22/是否应该在构造函数中使用this指针/">
-      <time datetime="2015-12-21T16:00:00.000Z" itemprop="datePublished">2015-12-22</time>
-    </a>
-  </div>
-
-
-          
-  <div class="article-category">
-  	<i class="fa fa-folder"></i>
-    <a class="article-category-link" href="/categories/C-知识库/">C++知识库</a>
-  </div>
-
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-                
-        <p>Some people feel you should not use the this pointer in a constructor because the object is not fully formed yet. However you can use this in the constructor (in the {body} and even in the initialization list) if you are careful.</p>
-<p>Here is something that always works: the {body} of a constructor (or a function called from the constructor) can reliably access the data members declared in a base class and/or the data members declared in the constructor’s own class. This is because all those data members are guaranteed to have been fully constructed by the time the constructor’s {body} starts executing.</p>
-<p>Here is something that never works: the {body} of a constructor (or a function called from the constructor) cannot get down to a derived class by calling a virtual member function that is overridden in the derived class. If your goal was to get to the overridden function in the derived class, you won’t get what you want. Note that you won’t get to the override in the derived class independent of how you call the virtual member function: explicitly using the this pointer (e.g., this-&gt;method()), implicitly using the this pointer (e.g., method()), or even calling some other function that calls the virtual member function on your this object. The bottom line is this: even if the caller is constructing an object of a derived class, during the constructor of the base class, your object is not yet of that derived class. You have been warned.</p>
-<p>Here is something that sometimes works: if you pass any of the data members in this object to another data member’s initializer, you must make sure that the other data member has already been initialized. The good news is that you can determine whether the other data member has (or has not) been initialized using some straightforward language rules that are independent of the particular compiler you’re using. The bad news is that you have to know those language rules (e.g., base class sub-objects are initialized first (look up the order if you have multiple and/or virtual inheritance!), then data members defined in the class are initialized in the order in which they appear in the class declaration). If you don’t know these rules, then don’t pass any data member from the this object (regardless of whether or not you explicitly use the this keyword) to any other data member’s initializer! And if you do know the rules, please be careful.</p>
-<p>来自 <a href="http://www.parashift.com/c++-faq/using-this-in-ctors.html" target="_blank" rel="external">http://www.parashift.com/c++-faq/using-this-in-ctors.html</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://hivegraphics.github.io/2015/12/22/是否应该在构造函数中使用this指针/" data-id="ciigyhxh40004kc8t11qz4jzi" class="article-share-link">分享到</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-    
-      <article id="post-不要在构造和析构函数中调用虚函数" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/22/不要在构造和析构函数中调用虚函数/">不要在构造和析构函数中调用虚函数</a>
+    <h1 class="article-title" itemprop="name">
+      不要在构造和析构函数中调用虚函数
     </h1>
   
 
@@ -252,11 +196,27 @@
     </footer>
   </div>
   
+    
+<nav id="article-nav">
+  
+    <a href="/2015/12/22/是否应该在构造函数中使用this指针/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          是否应该在构造函数中使用this指针？
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+
+  
 </article>
 
 
-
-    </section>
+</section>
       
         <aside id="sidebar">
   
