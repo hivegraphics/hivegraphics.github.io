@@ -99,7 +99,7 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        2
+        3
         <span>文章</span>
       </div>
       <div class="article-info-block">
@@ -128,7 +128,7 @@
 
       
       <section id="main">
-      <article id="post-是否应该在构造函数中使用this指针" class="article article-type-post" itemscope itemprop="blogPost">
+      <article id="post-老张实验室2012级毕业视频" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -137,7 +137,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/22/是否应该在构造函数中使用this指针/">是否应该在构造函数中使用this指针？</a>
+      <a class="article-title" href="/2016/03/15/老张实验室2012级毕业视频/">老张实验室2012级毕业视频</a>
     </h1>
   
 
@@ -145,8 +145,8 @@
           
   <div class="article-date">
     <i class="fa fa-calendar"></i>
-    <a href="/2015/12/22/是否应该在构造函数中使用this指针/">
-      <time datetime="2015-12-21T16:00:00.000Z" itemprop="datePublished">2015-12-22</time>
+    <a href="/2016/03/15/老张实验室2012级毕业视频/">
+      <time datetime="2016-03-14T16:00:00.000Z" itemprop="datePublished">2016-03-15</time>
     </a>
   </div>
 
@@ -154,7 +154,7 @@
           
   <div class="article-category">
   	<i class="fa fa-folder"></i>
-    <a class="article-category-link" href="/categories/C-知识库/">C++知识库</a>
+    <a class="article-category-link" href="/categories/毕业视频/">毕业视频</a>
   </div>
 
         </div>
@@ -163,16 +163,11 @@
     <div class="article-entry" itemprop="articleBody">
       
                 
-        <p>Some people feel you should not use the this pointer in a constructor because the object is not fully formed yet. However you can use this in the constructor (in the {body} and even in the initialization list) if you are careful.</p>
-<p>Here is something that always works: the {body} of a constructor (or a function called from the constructor) can reliably access the data members declared in a base class and/or the data members declared in the constructor’s own class. This is because all those data members are guaranteed to have been fully constructed by the time the constructor’s {body} starts executing.</p>
-<p>Here is something that never works: the {body} of a constructor (or a function called from the constructor) cannot get down to a derived class by calling a virtual member function that is overridden in the derived class. If your goal was to get to the overridden function in the derived class, you won’t get what you want. Note that you won’t get to the override in the derived class independent of how you call the virtual member function: explicitly using the this pointer (e.g., this-&gt;method()), implicitly using the this pointer (e.g., method()), or even calling some other function that calls the virtual member function on your this object. The bottom line is this: even if the caller is constructing an object of a derived class, during the constructor of the base class, your object is not yet of that derived class. You have been warned.</p>
-<p>Here is something that sometimes works: if you pass any of the data members in this object to another data member’s initializer, you must make sure that the other data member has already been initialized. The good news is that you can determine whether the other data member has (or has not) been initialized using some straightforward language rules that are independent of the particular compiler you’re using. The bad news is that you have to know those language rules (e.g., base class sub-objects are initialized first (look up the order if you have multiple and/or virtual inheritance!), then data members defined in the class are initialized in the order in which they appear in the class declaration). If you don’t know these rules, then don’t pass any data member from the this object (regardless of whether or not you explicitly use the this keyword) to any other data member’s initializer! And if you do know the rules, please be careful.</p>
-<p>来自 <a href="http://www.parashift.com/c++-faq/using-this-in-ctors.html" target="_blank" rel="external">http://www.parashift.com/c++-faq/using-this-in-ctors.html</a></p>
-
+        <iframe height="498" width="100%" src="http://player.youku.com/embed/XMTMwNTA3NTg4NA==" frameborder="0" allowfullscreen></iframe>
       
     </div>
     <footer class="article-footer">
-     <div class="ds-share" data-thread-key="post-是否应该在构造函数中使用this指针" data-title="是否应该在构造函数中使用this指针？" data-url="undefined">
+     <div class="ds-share" data-thread-key="post-老张实验室2012级毕业视频" data-title="老张实验室2012级毕业视频" data-url="undefined">
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-16">
         
@@ -195,7 +190,7 @@
   
 
     
-      <article id="post-不要在构造和析构函数中调用虚函数" class="article article-type-post" itemscope itemprop="blogPost">
+      <article id="post-老张实验室2011级毕业视频" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -204,7 +199,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/22/不要在构造和析构函数中调用虚函数/">不要在构造和析构函数中调用虚函数</a>
+      <a class="article-title" href="/2016/03/15/老张实验室2011级毕业视频/">老张实验室2011级毕业视频</a>
     </h1>
   
 
@@ -212,8 +207,8 @@
           
   <div class="article-date">
     <i class="fa fa-calendar"></i>
-    <a href="/2015/12/22/不要在构造和析构函数中调用虚函数/">
-      <time datetime="2015-12-21T16:00:00.000Z" itemprop="datePublished">2015-12-22</time>
+    <a href="/2016/03/15/老张实验室2011级毕业视频/">
+      <time datetime="2016-03-14T16:00:00.000Z" itemprop="datePublished">2016-03-15</time>
     </a>
   </div>
 
@@ -221,7 +216,7 @@
           
   <div class="article-category">
   	<i class="fa fa-folder"></i>
-    <a class="article-category-link" href="/categories/C-知识库/">C++知识库</a>
+    <a class="article-category-link" href="/categories/毕业视频/">毕业视频</a>
   </div>
 
         </div>
@@ -230,29 +225,73 @@
     <div class="article-entry" itemprop="articleBody">
       
                 
-        <p>I’ll begin with the recap: you shouldn’t call virtual functions during construction or destruction, because the calls won’t do what you think, and if they did, you’d still be unhappy. If you’re a recovering Java or C# programmer, pay close attention to this Item, because this is a place where those languages zig, while C++ zags.</p>
-<p>Suppose you’ve got a class hierarchy for modeling stock transactions, e.g., buy orders, sell orders, etc. It’s important that such transactions be auditable, so each time a transaction object is created, an appropriate entry needs to be created in an audit log. This seems like a reasonable way to approach the problem:</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">class Transaction &#123;</span><br><span class="line">public: </span><br><span class="line">    Transaction();</span><br><span class="line">    virtual void logTransaction() const = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">...</span></span><br><span class="line">&#125;;</span><br><span class="line">Transaction::Transaction()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">...</span></span><br><span class="line">    logTransaction();</span><br><span class="line">&#125;</span><br><span class="line">class BuyTransaction: public Transaction &#123;</span><br><span class="line">public:</span><br><span class="line">    virtual void logTransaction() const;</span><br><span class="line"><span class="keyword">...</span></span><br><span class="line">&#125;;</span><br><span class="line">class SellTransaction: public Transaction &#123;</span><br><span class="line">public:</span><br><span class="line">    virtual void logTransaction() const;</span><br><span class="line"><span class="keyword">...</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>Consider what happens when this code is executed:<br>BuyTransaction b;</p>
-<p>Clearly a BuyTransaction constructor will be called, but first, a Transaction constructor must be called; base class parts of derived class objects are constructed before derived class parts are. The last line of the Transaction constructor calls the virtual function logTransaction, but this is where the surprise comes in. The version of logTransaction that’s called is the one in Transaction, not the one in BuyTransaction—even though the type of object being created is BuyTransaction. During base class construction, virtual functions never go down into derived classes. Instead, the object behaves as if it were of the base type. Informally speaking, during base class construction, virtual functions aren’t.</p>
-<p>There’s a good reason for this seemingly counterintuitive behavior. Because base class constructors execute before derived class constructors, derived class data members have not been initialized when base class constructors run. If virtual functions called during base class construction went down to derived classes, the derived class functions would almost certainly refer to local data members, but those data members would not yet have been initialized. That would be a non-stop ticket to undefined behavior and late-night debugging sessions. Calling down to parts of an object that have not yet been initialized is inherently dangerous, so C++ gives you no way to do it.</p>
-<p>It’s actually more fundamental than that. During base class construction of a derived class object, the type of the object is that of the base class. Not only do virtual functions resolve to the base class, but the parts of the language using runtime type information (e.g., dynamic_cast (see Item 27) and typeid) treat the object as a base class type. In our example, while theTransaction constructor is running to initialize the base class part of a BuyTransaction object, the object is of type Transaction. That’s how every part of C++ will treat it, and the treatment makes sense: the BuyTransaction-specific parts of the object haven’t been initialized yet, so it’s safest to treat them as if they didn’t exist. An object doesn’t become a derived class object until execution of a derived class constructor begins.</p>
-<p>The same reasoning applies during destruction. Once a derived class destructor has run, the object’s derived class data members assume undefined values, so C++ treats them as if they no longer exist. Upon entry to the base class destructor, the object becomes a base class object, and all parts of C++—virtual functions, dynamic_casts, etc.—treat it that way.</p>
-<p>In the example code above, the Transaction constructor made a direct call to a virtual function, a clear and easy-to-see violation of this item’s guidance. The violation is so easy to see, some compilers issue a warning about it. (Others don’t. See Item 53 for a discussion of warnings.) Even without such a warning, the problem would almost certainly become apparent before runtime, because the logTransaction function is pure virtual in Transaction. Unless it had been defined (unlikely, but possible—see Item 34), the program wouldn’t link: the linker would be unable to find the necessary implementation of Transaction::logTransaction.</p>
-<p>It’s not always so easy to detect calls to virtual functions during construction or destruction. If Transaction had multiple constructors, each of which had to perform some of the same work, it would be good software engineering to avoid code replication by putting the common initialization code, including the call to logTransaction, into a private nonvirtual initialization function, say, init:</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">class Transaction &#123;</span><br><span class="line">public:</span><br><span class="line">    Transaction()</span><br><span class="line">    &#123; init(); &#125;</span><br><span class="line">virtual void logTransaction() const = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">...</span></span><br><span class="line">private:</span><br><span class="line">    void init()</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">...</span></span><br><span class="line">        logTransaction(); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>This code is conceptually the same as the earlier version, but it’s more insidious, because it will typically compile and link without complaint. In this case, because logTransaction is pure virtual in Transaction, most runtime systems will abort the program when the pure virtual is called (typically issuing a message to that effect). However, if logTransaction were a “normal” virtual function (i.e., not pure virtual) with an implementation in Transaction, that version would be called, and the program would merrily trot along, leaving you to figure out why the wrong version of logTransaction was called when a derived class object was created. The only way to avoid this problem is to make sure that none of your constructors or destructors call virtual functions on the object being created or destroyed and that all the functions they call obey the same constraint.</p>
-<p>But how do you ensure that the proper version of logTransaction is called each time an object in the Transaction hierarchy is created? Clearly, calling a virtual function on the object from the Transaction constructor(s) is the wrong way to do it.</p>
-<p>There are different ways to approach this problem. One is to turn logTransaction into a non-virtual function in Transaction, then require that derived class constructors pass the necessary log information to the Transaction constructor. That function can then safely call the nonvirtual logTransaction. Like this:</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Transaction &#123;</span><br><span class="line">public:</span><br><span class="line">    explicit Transaction(const std::string&amp; logInfo);</span><br><span class="line">    void logTransaction(const std::string&amp; logInfo) const;</span><br><span class="line"><span class="keyword">...</span></span><br><span class="line">&#125;;</span><br><span class="line">Transaction::Transaction(const std::string&amp; logInfo)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">...</span></span><br><span class="line">    logTransaction(logInfo);</span><br><span class="line">&#125;</span><br><span class="line">class BuyTransaction: public Transaction &#123;</span><br><span class="line">public:</span><br><span class="line">    BuyTransaction( parameters)</span><br><span class="line">    : Transaction(createLogString( parameters))</span><br><span class="line">    &#123; <span class="keyword">...</span> &#125;</span><br><span class="line">    <span class="keyword">...</span></span><br><span class="line">private:</span><br><span class="line">    static std::string createLogString( parameters);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>In other words, since you can’t use virtual functions to call down from base classes during construction, you can compensate by having derived classes pass necessary construction information up to base class constructors instead.</p>
-<p>In this example, note the use of the (private) static function createLogString in BuyTransaction. Using a helper function to create a value to pass to a base class constructor is often more convenient (and more readable) that going through contortions in the member initialization list to give the base class what it needs. By making the function static, there’s no danger of accidentally referring to the nascent BuyTransaction object’s as-yet-uninitialized data members. That’s important, because the fact that those data members will be in an undefined state is why calling virtual functions during base class construction and destruction doesn’t go down into derived classes in the first place.</p>
-<p>Things to Remember: Don’t call virtual functions during construction or destruction, because such calls will never go to a more derived class than that of the currently executing constructor or destructor. </p>
-
+        <iframe height="498" width="100%" src="http://player.youku.com/embed/XNzI2MDIzNTk2" frameborder="0" allowfullscreen></iframe>
       
     </div>
     <footer class="article-footer">
-     <div class="ds-share" data-thread-key="post-不要在构造和析构函数中调用虚函数" data-title="不要在构造和析构函数中调用虚函数" data-url="undefined">
+     <div class="ds-share" data-thread-key="post-老张实验室2011级毕业视频" data-title="老张实验室2011级毕业视频" data-url="undefined">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+        
+        <li>分享到：</li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+        
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+    </footer>
+  </div>
+  
+</article>
+
+  
+
+    
+      <article id="post-老张实验室2010级毕业视频" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/15/老张实验室2010级毕业视频/">老张实验室2012级毕业视频</a>
+    </h1>
+  
+
+        <div class="article-meta">
+          
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2016/03/15/老张实验室2010级毕业视频/">
+      <time datetime="2016-03-14T16:00:00.000Z" itemprop="datePublished">2016-03-15</time>
+    </a>
+  </div>
+
+
+          
+  <div class="article-category">
+  	<i class="fa fa-folder"></i>
+    <a class="article-category-link" href="/categories/毕业视频/">毕业视频</a>
+  </div>
+
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <iframe height="498" width="100%" src="http://player.youku.com/embed/XMTMwNTA3NTg4NA==" frameborder="0" allowfullscreen></iframe>
+      
+    </div>
+    <footer class="article-footer">
+     <div class="ds-share" data-thread-key="post-老张实验室2010级毕业视频" data-title="老张实验室2012级毕业视频" data-url="undefined">
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-16">
         
@@ -287,7 +326,7 @@
           <li>
             
             <div class="item-thumbnail">
-              <a href="/2015/12/22/是否应该在构造函数中使用this指针/" class="thumbnail">
+              <a href="/2016/03/15/老张实验室2012级毕业视频/" class="thumbnail">
   
     <span class="thumbnail-image thumbnail-none"></span>
   
@@ -295,16 +334,16 @@
             </div>
             
             <div class="item-inner">
-              <p class="item-category"><a class="article-category-link" href="/categories/C-知识库/">C++知识库</a></p>
-              <p class="item-title"><a href="/2015/12/22/是否应该在构造函数中使用this指针/" class="title">是否应该在构造函数中使用this指针？</a></p>
-              <p class="item-date"><time datetime="2015-12-21T16:00:00.000Z" itemprop="datePublished">2015-12-22</time></p>
+              <p class="item-category"><a class="article-category-link" href="/categories/毕业视频/">毕业视频</a></p>
+              <p class="item-title"><a href="/2016/03/15/老张实验室2012级毕业视频/" class="title">老张实验室2012级毕业视频</a></p>
+              <p class="item-date"><time datetime="2016-03-14T16:00:00.000Z" itemprop="datePublished">2016-03-15</time></p>
             </div>
           </li>
         
           <li>
             
             <div class="item-thumbnail">
-              <a href="/2015/12/22/不要在构造和析构函数中调用虚函数/" class="thumbnail">
+              <a href="/2016/03/15/老张实验室2011级毕业视频/" class="thumbnail">
   
     <span class="thumbnail-image thumbnail-none"></span>
   
@@ -312,9 +351,26 @@
             </div>
             
             <div class="item-inner">
-              <p class="item-category"><a class="article-category-link" href="/categories/C-知识库/">C++知识库</a></p>
-              <p class="item-title"><a href="/2015/12/22/不要在构造和析构函数中调用虚函数/" class="title">不要在构造和析构函数中调用虚函数</a></p>
-              <p class="item-date"><time datetime="2015-12-21T16:00:00.000Z" itemprop="datePublished">2015-12-22</time></p>
+              <p class="item-category"><a class="article-category-link" href="/categories/毕业视频/">毕业视频</a></p>
+              <p class="item-title"><a href="/2016/03/15/老张实验室2011级毕业视频/" class="title">老张实验室2011级毕业视频</a></p>
+              <p class="item-date"><time datetime="2016-03-14T16:00:00.000Z" itemprop="datePublished">2016-03-15</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2016/03/15/老张实验室2010级毕业视频/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/毕业视频/">毕业视频</a></p>
+              <p class="item-title"><a href="/2016/03/15/老张实验室2010级毕业视频/" class="title">老张实验室2012级毕业视频</a></p>
+              <p class="item-date"><time datetime="2016-03-14T16:00:00.000Z" itemprop="datePublished">2016-03-15</time></p>
             </div>
           </li>
         
@@ -327,7 +383,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C-知识库/">C++知识库</a><span class="category-list-count">2</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/毕业视频/">毕业视频</a><span class="category-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -340,7 +396,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -353,7 +409,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2015 Hive<br>
+      &copy; 2016 Hive<br>
     </div>
   </div>
 </footer>
