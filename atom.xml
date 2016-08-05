@@ -5,7 +5,7 @@
   <subtitle><![CDATA[Hive]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://hive.graphics//"/>
-  <updated>2016-05-27T12:07:03.316Z</updated>
+  <updated>2016-08-05T03:39:24.575Z</updated>
   <id>http://hive.graphics//</id>
   
   <author>
@@ -14,6 +14,21 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[老张实验室2013级毕业视频]]></title>
+    <link href="http://hive.graphics/2016/08/05/%E8%80%81%E5%BC%A0%E5%AE%9E%E9%AA%8C%E5%AE%A42013%E7%BA%A7%E6%AF%95%E4%B8%9A%E8%A7%86%E9%A2%91/"/>
+    <id>http://hive.graphics/2016/08/05/老张实验室2013级毕业视频/</id>
+    <published>2016-08-04T16:00:00.000Z</published>
+    <updated>2016-08-05T03:39:24.575Z</updated>
+    <content type="html"><![CDATA[<iframe height="498" width="100%" src="http://player.youku.com/embed/XMTY0Njg2MzcxMg==" frameborder="0" allowfullscreen></iframe>]]></content>
+    <summary type="html">
+    <![CDATA[<iframe height="498" width="100%" src="http://player.youku.com/embed/XMTY0Njg2MzcxMg==" frameborder="0" allowfullscreen></iframe>]]>
+    </summary>
+    
+      <category term="毕业视频" scheme="http://hive.graphics/categories/%E6%AF%95%E4%B8%9A%E8%A7%86%E9%A2%91/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[春游烧烤记]]></title>
@@ -49,25 +64,10 @@
   
   <entry>
     <title><![CDATA[老张实验室2012级毕业视频]]></title>
-    <link href="http://hive.graphics/2016/03/15/%E8%80%81%E5%BC%A0%E5%AE%9E%E9%AA%8C%E5%AE%A42013%E7%BA%A7%E6%AF%95%E4%B8%9A%E8%A7%86%E9%A2%91/"/>
-    <id>http://hive.graphics/2016/03/15/老张实验室2013级毕业视频/</id>
-    <published>2016-03-14T16:00:00.000Z</published>
-    <updated>2016-08-05T03:33:46.693Z</updated>
-    <content type="html"><![CDATA[<iframe height="498" width="100%" src="http://v.youku.com/v_show/id_XMTY0Njg2MzcxMg==.html" frameborder="0" allowfullscreen></iframe>]]></content>
-    <summary type="html">
-    <![CDATA[<iframe height="498" width="100%" src="http://v.youku.com/v_show/id_XMTY0Njg2MzcxMg==.html" frameborder="0" allowfullscreen></iframe>]]>
-    </summary>
-    
-      <category term="毕业视频" scheme="http://hive.graphics/categories/%E6%AF%95%E4%B8%9A%E8%A7%86%E9%A2%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[老张实验室2012级毕业视频]]></title>
-    <link href="http://hive.graphics/2016/03/15/%E8%80%81%E5%BC%A0%E5%AE%9E%E9%AA%8C%E5%AE%A42012%E7%BA%A7%E6%AF%95%E4%B8%9A%E8%A7%86%E9%A2%91/"/>
-    <id>http://hive.graphics/2016/03/15/老张实验室2012级毕业视频/</id>
-    <published>2016-03-14T16:00:00.000Z</published>
-    <updated>2016-03-15T09:36:58.168Z</updated>
+    <link href="http://hive.graphics/2016/03/18/%E8%80%81%E5%BC%A0%E5%AE%9E%E9%AA%8C%E5%AE%A42012%E7%BA%A7%E6%AF%95%E4%B8%9A%E8%A7%86%E9%A2%91/"/>
+    <id>http://hive.graphics/2016/03/18/老张实验室2012级毕业视频/</id>
+    <published>2016-03-17T16:00:00.000Z</published>
+    <updated>2016-08-05T03:40:20.871Z</updated>
     <content type="html"><![CDATA[<iframe height="498" width="100%" src="http://player.youku.com/embed/XMTMwNTA3NTg4NA==" frameborder="0" allowfullscreen></iframe>]]></content>
     <summary type="html">
     <![CDATA[<iframe height="498" width="100%" src="http://player.youku.com/embed/XMTMwNTA3NTg4NA==" frameborder="0" allowfullscreen></iframe>]]>
